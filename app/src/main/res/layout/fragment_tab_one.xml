@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Fragments.TabOneFragment">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Click to Select Pictures"
+    android:gravity="center"
+    android:textSize="25sp"
+    android:textStyle="bold"
+    android:layout_margin="5dp"
+    />
+        <!-- TODO: Update blank fragment layout -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:columnCount="2"
+            android:rowCount="3">
+
+            <ImageView
+                android:id="@+id/one"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_icon"
+                android:tag="1" />
+
+            <ImageView
+                android:id="@+id/two"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_icon"
+                android:tag="2" />
+
+            <ImageView
+                android:id="@+id/three"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_icon"
+                android:tag="3" />
+
+            <ImageView
+                android:id="@+id/four"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_icon"
+                android:tag="4" />
+
+            <ImageView
+                android:id="@+id/five"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_icon"
+                android:tag="5" />
+        </GridLayout>
+
+    </LinearLayout>
+</layout>
